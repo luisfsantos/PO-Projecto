@@ -1,8 +1,6 @@
 package arabiannights;
 
 public class Genie {
-
-
 	private int _wishes;
 	private int _wishesGranted;
 
