@@ -32,5 +32,5 @@ abstract class Genie {
 		return (boolean)(_wishes - _wishesGranted);
 	}
 
-	abstract String toString(){}
+	abstract String toString();
 }
