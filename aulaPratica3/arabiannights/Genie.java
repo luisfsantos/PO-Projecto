@@ -1,6 +1,6 @@
 package arabiannights;
 
-public class Genie {
+abstract class Genie {
 	private int _wishes;
 	private int _wishesGranted;
 
@@ -31,4 +31,6 @@ public class Genie {
 	public boolean canGrantWish(){
 		return (boolean)(_wishes - _wishesGranted);
 	}
+
+	abstract String toString(){}
 }
