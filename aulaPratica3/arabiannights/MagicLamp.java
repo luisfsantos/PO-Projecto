@@ -1,35 +1,41 @@
 package arabiannights;
 
 public class MagicLamp {
-	public Genie [] _genies;
+	private int _genies;
 	private int _createdGenies;
 	private int _createdDemons;
 	private int _rubs;
 
-	public MagicLamp(int genies){
-		Genie [] _genies = new Genie[genies];
+
+	public static void main(String[] args){
+		MagicLamp arrabia = new MagicLamp(6);
+		Genie alibaba = arrabia.Rub(4);
+		alibaba.toString();
+		alibaba.grantWish();
+		alibaba.toString();
+
 	}
 
-	public void Rub(int wishes){
-		if(even(_rubs)){
-			_genies[_createdGenies]= new GrumpyGenie(wishes);
+
+	public MagicLamp(int genies){
+		_genies = genies;
+	}
+
+	public Genie Rub(int wishes){
+		_rubs+=1;
+		if(even(_rubs-1)){
 			_createdGenies+=1;
+			return new GrumpyGenie(wishes);
+
 		} else {
-			_genies[_createdGenies]= new FriendlyGenie(wishes);
 			_createdGenies+=1;
+			return new FriendlyGenie(wishes);
 		}
 	}
+	
 	public boolean even(int num){
 		return (num%2)==0;
 	}
 
-	public static void main(){
-		MagicLamp arrabia = new MagicLamp(6);
-		arrabia.Rub(4);
-		arrabia._genies[0].toString();
-		arrabia._genies[0].grantWish();
-		arrabia._genies[0].toString();
-
-	}
 
 }

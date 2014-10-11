@@ -24,13 +24,17 @@ abstract class Genie {
 		return _wishesGranted;
 	}
 
-	public int getRemaningWishes(){
+	public int getRemainingWishes(){
 		return (_wishes - _wishesGranted);
 	}
 
-	public boolean canGrantWish(){
-		return (boolean)(_wishes - _wishesGranted);
+	public boolean canGrantWish() {
+		if (getRemainingWishes()==0) {
+			return false;
+		} else {
+			return true;
+		}
 	}
-	@Override
-	abstract void toString();
+
+	public abstract String toString();
 }
