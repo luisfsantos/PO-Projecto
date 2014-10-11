@@ -7,7 +7,7 @@ public class FriendlyGenie extends Genie {
 	}
 
 	
-	public toString(){
+	public void toString(){
 		System.out.println("Friendly genie has granted" + getGrantedWishes() +
 		 " wishes and still has" + getRemainingWishes() + " to grant.");
 	}

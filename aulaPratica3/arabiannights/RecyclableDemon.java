@@ -15,4 +15,20 @@ public class RecyclableDemon extends Genie {
 			return true;
 		}
 	}
+
+	public  boolean recycled(){
+		return _recycled;
+	}
+
+	public void recycle(){
+		_recycled = true;
+	}
+
+	public void toString(){
+		if (_recycled) {
+			System.out.println("Demon has been recycled.");
+		} else {
+			System.out.println("Recyclable demon has granted" + getWishesGranted() + " wishes.");
+		}
+	}
 }

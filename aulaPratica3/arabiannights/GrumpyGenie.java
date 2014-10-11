@@ -7,7 +7,7 @@ public class GrumpyGenie extends Genie {
 	}
 
 	
-	public toString(){
+	public void toString(){
 		if (getGrantedWishes()) {
 			System.out.println("Grumpy genie has granted a wish.");
 		} else {

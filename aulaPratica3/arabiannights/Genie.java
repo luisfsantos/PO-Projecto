@@ -31,6 +31,6 @@ abstract class Genie {
 	public boolean canGrantWish(){
 		return (boolean)(_wishes - _wishesGranted);
 	}
-
-	abstract String toString();
+	@Override
+	abstract void toString();
 }
