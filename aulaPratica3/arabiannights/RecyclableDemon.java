@@ -27,10 +27,8 @@ public class RecyclableDemon extends Genie {
 
 	public String toString(){
 		if (_recycled) {
-			System.out.println("Demon has been recycled.");
 			return "Demon has been recycled.";
 		} else {
-			System.out.println("Recyclable demon has granted" + getGrantedWishes() + " wishes.");
 			return "Recyclable demon has granted" + getGrantedWishes() + " wishes.";
 		}
 	}
