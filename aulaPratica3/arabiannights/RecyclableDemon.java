@@ -7,7 +7,7 @@ public class RecyclableDemon extends Genie {
 	private boolean _recycled;
 
 	/**
-	*Constroe RecyclableDemons com o numero de wishes a -1 pois tem numero ilimitado.
+	*Constroe RecyclableDemon com o numero de wishes a -1 pois tem numero ilimitado.
 	*@param int wishes, indica o numero de desejos que o Demon pode realizar embora seja ignorado.
 	*/
 	public RecyclableDemon(int wishes) {
@@ -17,7 +17,8 @@ public class RecyclableDemon extends Genie {
 	/**
 	* Realiza um desejo.
 	*<p>O desejo so e' realizado se o Demon ainda nao estiver reciclado.
-	*@return <code> true </code> caso o desejo seja realizado e <code> false </code> caso contrario.
+	*@return <code> true </code> caso o desejo seja realizado e
+	* <code> false </code> caso contrario.
 	*/
 	@Override
 	public boolean grantWish() {
@@ -52,8 +53,11 @@ public class RecyclableDemon extends Genie {
 	public void recycle(){
 		_recycled = true;
 	}
+
 	/**
-	*
+	* Interface do RecyclableDemon para indicar o numero de desejos realizados ou se foi reciclado
+	* @return <code> String </code> que indica se foi reciclado. Em contrario
+	*   indica o numero de desejos realizados.
 	*/
 	public String toString(){
 		if (_recycled) {
