@@ -1,6 +1,7 @@
 package arabiannights;
 /**
-* Classe que implementa o funcionamento do GrumpyGenie
+*Classe que implementa o FriendlyGenie que e' libertado quando a 
+*esfregamos a lampada um numero impar de vezes.
 *@see Genie
 */
 public class GrumpyGenie extends Genie {

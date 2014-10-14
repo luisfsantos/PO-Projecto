@@ -18,7 +18,7 @@ public class MagicLamp {
 /**
 *Esfrega a lampada libertando um dos genios ou um demonio.
 *@param wishes Numero de desejos que o genio tera que realizar.
-*@return A lampada pode ser esfregada um numero par ou impar de vezes, devolvendo um GrumpyGenie ou FriendlyGenie, respectivamente. 
+*@return A lampada pode ser esfregada um numero impar ou par de vezes, devolvendo um GrumpyGenie ou FriendlyGenie, respectivamente. 
 *  Liberta RecyclableGenie quando nao tem genios disponiveis. 
 */
 	public Genie rub(int wishes){
@@ -89,8 +89,8 @@ public class MagicLamp {
 
 /**
 *Verifica se as duas lampadas sao iguais.
-*@return true se a capacidade, numero de genios disponiveis e numero de recarregamentos forem iguais em duas lampadas. 
-*False no caso contrario
+*@return <code>true</code> se a capacidade, numero de genios disponiveis e numero de recarregamentos forem iguais em duas lampadas. 
+*<code>false</code>  no caso contrario
 */
 	public boolean equals (Object lamp2)
 	{	

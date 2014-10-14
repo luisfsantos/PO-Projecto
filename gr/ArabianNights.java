@@ -6,11 +6,11 @@ public class ArabianNights{
 
 		public static void main(String[] args){
 		MagicLamp arrabia = new MagicLamp(4);
-		Genie alibaba1 = arrabia.Rub(2);
-		Genie alibaba2 = arrabia.Rub(3);
-		Genie alibaba3 = arrabia.Rub(4);
-		Genie alibaba4 = arrabia.Rub(5);
-		Genie alibaba5 = arrabia.Rub(1);
+		Genie alibaba1 = arrabia.rub(2);
+		Genie alibaba2 = arrabia.rub(3);
+		Genie alibaba3 = arrabia.rub(4);
+		Genie alibaba4 = arrabia.rub(5);
+		Genie alibaba5 = arrabia.rub(1);
 		System.out.println(alibaba1.toString());
 		System.out.println(alibaba2.toString());
 		System.out.println(alibaba3.toString());
@@ -44,7 +44,7 @@ public class ArabianNights{
 		arrabia.feedDemon((RecyclableDemon) alibaba5);
 		System.out.println(alibaba5.canGrantWish());
 		System.out.println(alibaba5.toString());
-		Genie alibaba6 = arrabia.Rub(7);
+		Genie alibaba6 = arrabia.rub(7);
 
 		System.out.println(alibaba6.toString());
 	}

@@ -1,7 +1,7 @@
 package arabiannights;
 /**
 *Classe que implementa o FriendlyGenie que e' libertado quando a 
-*lampada esta' contente.
+*esfregamos a lampada um numero par de vezes.
 *@see arabiannights.Genie
 */
 public class FriendlyGenie extends Genie {
