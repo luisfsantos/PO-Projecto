@@ -21,7 +21,7 @@ public class MagicLamp {
 *@return A lampada pode ser esfregada um numero par ou impar de vezes, devolvendo um GrumpyGenie ou FriendlyGenie, respectivamente. 
 *  Liberta RecyclableGenie quando nao tem genios disponiveis. 
 */
-	public Genie Rub(int wishes){
+	public Genie rub(int wishes){
 		_rubs+=1;
 		if (_genies > _createdGenies)
 		{
