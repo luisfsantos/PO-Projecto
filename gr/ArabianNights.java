@@ -1,7 +1,7 @@
-//package arabiannights;
 import arabiannights.*;
-
-
+/**
+*Classe que contem a funcao main.
+*/
 public class ArabianNights{
 
 		public static void main(String[] args){
@@ -42,10 +42,7 @@ public class ArabianNights{
 		System.out.println(alibaba5.toString());
 
 		arrabia.feedDemon((RecyclableDemon) alibaba5);
-		System.out.println(alibaba5.canGrantWish());
-		System.out.println(alibaba5.toString());
 		Genie alibaba6 = arrabia.rub(7);
-
 		System.out.println(alibaba6.toString());
 	}
 

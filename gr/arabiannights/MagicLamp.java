@@ -6,7 +6,7 @@ package arabiannights;
 public class MagicLamp {
 	private int _genies;
 	private int _createdGenies;
-	private int _createdDemons;
+	private int _numReloads;
 	private int _rubs;
 /**
 *Construtor da MagicLamp
@@ -48,14 +48,9 @@ public class MagicLamp {
 			demon.recycle();
 			_createdGenies = 0;
 			_rubs = 0;
-			_createdDemons += 1;
+			_numReloads += 1;
 		}
 		return;
-		/*else
-		{
-			System.out.println("Demonio ja foi reciclado");
-		}*/
-
 	}
 
 /**
@@ -73,7 +68,7 @@ public class MagicLamp {
 */
 	public int getDemons ()
 	{
-		return _createdDemons;
+		return _numReloads;
 	}
 
 
