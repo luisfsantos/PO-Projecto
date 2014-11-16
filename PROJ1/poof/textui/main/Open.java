@@ -46,6 +46,8 @@ public class Open extends Command<ActiveShell> {
 	open.parse();
 	try{
 		entity().changeShell(ActiveShell.load(filename.value()));
+		entity().getFileSytem().setSaveName(filename.value());
+		((MainMenu)menu()).showOptionsNonEmpty();
 	} catch (ClassNotFoundException e) {
 		Display d = new Display(title());
 		d.addNewLine(Message.fileNotFound());
@@ -55,8 +57,7 @@ public class Open extends Command<ActiveShell> {
 		d.addNewLine(Message.fileNotFound());
 		d.display();
 	}
-	entity().getFileSytem().setSaveName(filename.value());
-	((MainMenu)menu()).showOptionsNonEmpty();
+	
 
 }
 
