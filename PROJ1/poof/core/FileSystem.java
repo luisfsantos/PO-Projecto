@@ -34,7 +34,7 @@ private String _saveName;
 */
 public FileSystem() {
 	_rootDirectory = new RootDirectory();
-	User root = new SuperUser();
+	User root = new SuperUser("Super User", "root");
 	root.setHome(_rootDirectory.subDirectory("home", "root").subDirectory("root", "root"));
 	_users.put("root", root);
 

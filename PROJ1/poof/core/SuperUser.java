@@ -5,8 +5,8 @@ public class SuperUser extends User {
 	private String _userName;
 	private Directory _home;
 
-	public SuperUser() {
-		super("super user", "root");
+	public SuperUser(String name, String username) {
+		super(name, username);
 	}
 
 	public User createUser(String name, String username) {
