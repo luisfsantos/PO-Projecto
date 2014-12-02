@@ -1,0 +1,6 @@
+Manifest-Version: 1.1
+Class-Path: poof-support.jar pt.jar 
+Created-By: Luis Santos 77900,  Pedro Fernandes 77961 e Constantin Zavgorodnii 78030
+Main-Class: poof.textui.Shell
+
+
